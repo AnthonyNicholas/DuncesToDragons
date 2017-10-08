@@ -12,9 +12,14 @@ class MyQuestionsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet weak var MyQuestionsLabel: UILabel!
     @IBOutlet weak var myQuestionTable: UITableView!
+    @IBOutlet weak var myQuestionTextField: UITextField!
     
     var selectedRow:Int = -1
     var questionList:[String] = ["How do I calculate angular momentum?", "I can't understand language in Shakesphere?"]
+    var answerList:[String] = ["3pm, Hayden Library, Mohit", "11am, Memorial Union, Julia", "5.30pm, Starbucks, Jacob"]
+    var levelPics:[UIImage] = [#imageLiteral(resourceName: "Dunce Profile.jpg"),#imageLiteral(resourceName: "Tutor Level 1.jpg"),#imageLiteral(resourceName: "Tutor Level 2.jpg"),#imageLiteral(resourceName: "Tutor Level 3.jpg"),#imageLiteral(resourceName: "Tutor Level 4.jpg"),#imageLiteral(resourceName: "Tutor Level 5.jpg")]
+    
+    var q_Data = qData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +37,12 @@ class MyQuestionsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     
     func addQuestion(){
-        let newQuestion:String = "New Question"
+        let newQuestion:String = myQuestionTextField.text!
         questionList.insert(newQuestion, at: 0)
         
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
         myQuestionTable.insertRows(at: [indexPath], with: .automatic)
         myQuestionTable.selectRow(at: indexPath, animated: true, scrollPosition: .none)
-        self.performSegue(withIdentifier: "myQ_detail", sender: nil)
     }
 
     
@@ -77,6 +81,10 @@ class MyQuestionsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
         let detailView:MyQuestionsDetailView = segue.destination as! MyQuestionsDetailView
         selectedRow = myQuestionTable.indexPathForSelectedRow!.row
         detailView.setQuestion(q: questionList[selectedRow])
+        detailView.setAnswer(a: answerList[selectedRow])
+        detailView.setImages(i: levelPics)
+        detailView.q_Data = self.q_Data
+        
     }
 
     override func didReceiveMemoryWarning() {

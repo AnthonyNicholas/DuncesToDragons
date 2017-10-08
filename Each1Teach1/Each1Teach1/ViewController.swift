@@ -30,8 +30,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "MainPage"
         resetTuteStats()
-        OtherQ_Button.layer.cornerRadius = 5
-        MyQ_Button.layer.cornerRadius = 5
         MeetUpButton.layer.cornerRadius = 5
         dragonLabel.layer.cornerRadius = 5
         profilePic.layer.cornerRadius = 10
@@ -51,8 +49,8 @@ class ViewController: UIViewController {
     }
     
     func resetTuteStats(){
-        TuteTimeOutputLabel.text = "0"
-        TutePointsOutputLabel.text = "0"
+        TuteTimeOutputLabel.text = "16 Hours"
+        TutePointsOutputLabel.text = "4.3"
         
     }
     
