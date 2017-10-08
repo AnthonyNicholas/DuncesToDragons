@@ -11,12 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var TuteTimeOutputLabel: UILabel!
     @IBOutlet weak var TutePointsOutputLabel: UILabel!
+    @IBOutlet weak var OtherQ_Button: UIButton!
+    @IBOutlet weak var MyQ_Button: UIButton!
+    @IBOutlet weak var MeetUpButton: UIButton!
+    @IBOutlet weak var dragonLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "MainPage"
         resetTuteStats()
+        OtherQ_Button.layer.cornerRadius = 5
+        MyQ_Button.layer.cornerRadius = 5
+        MeetUpButton.layer.cornerRadius = 5
+        dragonLabel.layer.cornerRadius = 5
+
     }
 
     override func didReceiveMemoryWarning() {

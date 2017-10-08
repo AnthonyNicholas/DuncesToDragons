@@ -24,6 +24,10 @@ class MyQuestionsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addQuestion))
         self.navigationItem.rightBarButtonItem = addButton
 //        self.navigationItem.leftBarButtonItem = editButtonItem
+        
+//        cell.textLabel.font = [UIFont fontWithName:@"Papyrus" size:14.0f];
+        
+        
     }
     
     
@@ -64,6 +68,7 @@ class MyQuestionsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
         let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "myQ_cell")!
         
         cell.textLabel?.text = questionList[indexPath.row]
+        cell.textLabel?.font = UIFont(name:"Papyrus", size:14)
         return cell
     }
 
