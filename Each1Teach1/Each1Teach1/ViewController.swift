@@ -15,6 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var MyQ_Button: UIButton!
     @IBOutlet weak var MeetUpButton: UIButton!
     @IBOutlet weak var dragonLabel: UILabel!
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var duncePic: UIImageView!
+    @IBOutlet weak var drag1pic: UIImageView!
+    @IBOutlet weak var drag2pic: UIImageView!
+    @IBOutlet weak var drag3pic: UIImageView!
+    @IBOutlet weak var drag4pic: UIImageView!
+    @IBOutlet weak var drag5pic: UIImageView!
+    @IBOutlet weak var bigDragPic: UIImageView!
     
 
     override func viewDidLoad() {
@@ -26,7 +34,15 @@ class ViewController: UIViewController {
         MyQ_Button.layer.cornerRadius = 5
         MeetUpButton.layer.cornerRadius = 5
         dragonLabel.layer.cornerRadius = 5
-
+        profilePic.layer.cornerRadius = 10
+        duncePic.layer.cornerRadius = 4
+        drag1pic.layer.cornerRadius = 4
+        drag2pic.layer.cornerRadius = 4
+        drag3pic.layer.cornerRadius = 4
+        drag4pic.layer.cornerRadius = 4
+        drag5pic.layer.cornerRadius = 4
+        bigDragPic.layer.cornerRadius = 100
+        
     }
 
     override func didReceiveMemoryWarning() {

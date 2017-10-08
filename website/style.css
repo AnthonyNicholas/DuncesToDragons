@@ -31,9 +31,12 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1.4;
 	font-family: Arial, Helvetica, Sans-serif;
+	padding:70px;
+		font-family:"papyrus";
 }
 ol, ul {
 	list-style: none;
+	font-family:"papyrus";
 }
 blockquote, q {
 	quotes: none;
@@ -47,6 +50,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 
 /* micro clear fix */
 .grouping:before,
@@ -84,6 +89,28 @@ strong, b {
 /* Classes and IDs*/
 .secondary-section{
 	margin-bottom:50px;
-	
+}
+.large-label{
+	font-size:50px;
 }
 
+
+/*Re-define*/
+h2{
+	font-size:18px;
+	font-family:"papyrus";
+}
+
+h1{
+	font-size:24px;
+	font-family:"papyrus";
+}
+
+p{
+	font-size:16px;
+	font-family:"papyrus";
+}
+
+*{
+	font-family:"papyrus";
+}
