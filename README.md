@@ -1,4 +1,5 @@
-# eachOneTeachOne
+# Dunces to Dragons
+## Better Education - peer tutoring
 Project for Hackathon - Hack for Humanity.
 
 In 36 hours we worked in a team of five to create a project that would have e beneficial impact on Humanity.  We created a peer tutoring concept called "Dunces to Dragons".
