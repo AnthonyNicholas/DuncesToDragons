@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+	font-family: Arial, Helvetica, Sans-serif;
+	padding:70px;
+		font-family:"papyrus";
+	background-image: url('Tutor Level 5.jpg');
+}
+ol, ul {
+	list-style: none;
+	font-family:"papyrus";
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+	content: " ";
+	display: table;
+}
+.grouping:after {
+	clear: both;
+}
+img, iframe, video, object{
+	max-width: 100%;
+}
+strong, b {
+	font-weight: bold;
+}
+
+
+/*Global*/
+.center{
+	text-align:center;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.wide{
+	width:100%;
+}
+.tall{
+	height:100%;
+}
+/* Classes and IDs*/
+.secondary-section{
+	margin-bottom:50px;
+}
+.large-label{
+	font-size:50px;
+}
+.small-icon{
+	width:10%;
+	height:10%;
+}
+.round{
+	border-radius:10px;
+}
+
+.textbox{
+	padding:10px;
+}
+.orange{
+	color:#FF7E00;
+}
+.blue{
+	color:#007f7a;
+}
+.darkbluebackground{
+	background-color: #002E2C;
+}
+.justify{
+	text-align:justify;
+}
+.questionpost{
+	background-color:#333333;
+	padding:15px;
+}
+.side-content{
+		background-color: #002E2C;
+		color:#ffffff;
+		margin-left:5px;
+		padding:10px;
+}
+.commenttable{
+	border-width:10px;
+	border-color:#ffffff;
+	padding:3px;
+	margin-bottom:50px;
+}
+
+table, tr, td{
+	border-width:10px;
+	border-color:#808080;
+}
+/*Re-define*/
+h2{
+	font-size:18px;
+	font-family:"papyrus";
+	color: #FFFFFF;
+
+}
+
+h1{
+	font-size:24px;
+	font-family:"papyrus";
+	color:#FFFFFF;
+
+}
+
+p{
+	font-size:16px;
+	font-family:"papyrus";
+	color:#FFFFFF;
+}
+
+*{
+	font-family:"papyrus";
+}
+.button{
+	background-color: #007f7a;
+	color:#FFFFFF;
+}
